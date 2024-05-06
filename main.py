@@ -13,25 +13,6 @@ import subprocess, sys, argparse
 #   elif sis == "linux" or sis == "darwin":
 #      subprocess.run("clear", shell=True)
 
-# clearSys()
-# Header()
-# portScanner()
-# zxWPS_191()
-# zxWPS_632()
-
-
-# def tampilkan_opsi():
-#     Header()
-#     print(
-#         """
-#     ╔══════════╦═══════════════════════════════════════════════════════════════════╗
-#     ║          ║ [1] Port Scanner                                                  ║
-#     ║          ║ [2] WPS < 6.3.2(Unauthenticated Post Author Email Disclosure)     ║
-#     ║  OPTION  ║ [3] WPS Hide Login < 1.9.1(Protection Bypass with Referer-Header) ║
-#     ║          ║ [4] Extract Email                                                 ║
-#     ║          ║ [5] Cracking Hash                                                 ║
-#     ╚══════════╩═══════════════════════════════════════════════════════════════════╝""")
-
 def zxInstallR():
     subprocess.check_call(["pip", "install", "-r", "requirements.txt"])
 
@@ -56,10 +37,6 @@ def zxArgs():
     # Parsing argumen
     args = parser.parse_args()
 
-    # Jika argumen -So atau --showOption diberikan, tampilkan opsi menu
-    # if args.showOption:
-    #     tampilkan_opsi()
-    # Jika argumen -Ps atau --portScanner diberikan, jalankan script port scanner
     if args.portScanner:
         Header()
         portScanner()
