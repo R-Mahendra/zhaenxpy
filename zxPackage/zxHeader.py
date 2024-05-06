@@ -1,6 +1,5 @@
 import random
 from colorama import init, Fore, Style
-import time
 
 init(autoreset=True)
 
