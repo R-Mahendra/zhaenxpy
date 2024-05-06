@@ -1,12 +1,17 @@
-# zhaenxpy
-/*menambahkan dan menampilkan warna pada file readme.md:*/ 
-/* Warna Kotak: */ 
-- ! [#f03c15] ( https : //via.placeholder.com/15/f03c15/f03c15.png) `#f03c15`
- - ![ #c5f015 ]( https : //via.placeholder.com/15/c5f015/c5f015. png) `#c5f015`
- - ![ #1589F0 ]( https : //via.placeholder.com/15/1589F0/1589F0.png) `#1589F0` 
-/* Bulat(Lingkaran) Warna: */
- - ![ #f03c15 ]( https : //www.iconsdb.com/icons/download/color/f03c15/circle-16.png) `#f03c15`
- - ![ #c5f015 ]( https : //www.iconsdb.com/icons/download /color/c5f015/circle-16.png) `#c5f015`
- - ![ #1589F0 ]( https : //www.iconsdb.com/icons/download/color/1589F0/circle-16.png) `#1589F0` 
-/* yang terakhir Anda dapat pergi ke situs web dan mengubah bentuknya sesuai keinginan Anda 
-dan menyalin tautan img dan menambahkannya ke README.md Anda*/
+# Description
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+
+[![code style: prettier](https://img.shields.io/badge/zhaenx_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
+## Installation
+
+1. Fork the project
+2. Clone the project https://github.com/R-Mahendra/zhaenxpy.git
+3. cd zhaenxpy
+4. python3 -m pip install requirements.txt
+5. python3 zhaenx.py
+
+<h1 align="center">
+  Disclaimer
+</h1>
