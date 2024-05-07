@@ -1,14 +1,13 @@
 [![code style:](https://img.shields.io/badge/Author-zhaenx-blue?logo=python&logoColor=ffff00)](https://github.com/prettier/prettier)
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+zhaenxpy :: Tools Python ini adalah sebuah program multifungsi yang dirancang untuk membantu aktivitas dalam bug bounty hunter (Ethical Hacking), Script ini masih sangat sederhana dan masih dalam tahap develop.
 
 
 ## Installation
 
-1. Fork the project
-2. Clone the project https://github.com/R-Mahendra/zhaenxpy.git
-3. cd zhaenxpy
-4. python3 zhaenx.py --install
+1. Clone the project https://github.com/R-Mahendra/zhaenxpy.git
+2. cd zhaenxpy
+3. python3 zhaenx.py --install
 
 ---
 
@@ -47,14 +46,14 @@ options:
                       dan membandingkannya dengan hash yang diberikan oleh pengguna. Jika ada kecocokan,program mencetak password
                       yang cocok dan waktu saat ini. Jika tidak ada kecocokan, program mencetak pesan bahwa password tidak ditemukan.
 
-  --install           Untuk installasi semua requirements yang di butuhkan.
+  --install           Untuk installasi semua requirements yang dibutuhkan.
 
 ```
 
 ---
 <h4 align="center">
   Disclaimer
-  <p><i>Script ini untuk pembelajaran, Segala sesuata hal apapun tanggung jawab sendiri.</i></p>
+  <p>Script ini untuk pembelajaran, Segala sesuata hal apapun tanggung jawab sendiri.</p>
 </h4>
 
 
