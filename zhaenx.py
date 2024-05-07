@@ -17,9 +17,8 @@ def main():
         # Memeriksa koneksi internet
         response = requests.get("http://www.google.com", timeout=5)
         response.raise_for_status()
-        zxPrint("════════ Happy Hacking ════════\n")
-        return True
-
+        # zxPrint("\n════════ Happy Hacking ════════\n")
+        return
         # Jika koneksi internet terputus
     except requests.exceptions.ConnectionError:
         zxPrint("\n\n════════ The Internet is not connected. ════════\n")
