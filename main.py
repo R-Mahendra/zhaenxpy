@@ -3,7 +3,10 @@ from zxPackage.zxPortScan import portScanner
 from zxPackage.zxWPS import zxWPS_191
 from zxPackage.zxWPS import zxWPS_632
 from zxPackage.zxExtractEmail import zxEmail
-import subprocess, sys, argparse
+from zxPackage.zxCrackHash import md5_Crax
+import subprocess
+import sys
+import argparse
 
 
 # def clearSys():
@@ -24,14 +27,19 @@ def zxArgs():
     parser.add_argument("-Wp191", "--wpLogin", action="store_true", help="(WPS-Hide-Login) Bypass Perlindungan dengan Referer-Header. Plugin ini memiliki bug yang  memungkinkan untuk mendapatkan halaman login rahasia dengan mengatur string referensi acak dan membuat permintaan ke /wp-admin/options.php sebagai pengguna yang tidak diautentikasi.")
     parser.add_argument("-Em", "--exMail", action="store_true", help="Opsi ini hanya untuk memudahkan mencari tiap-tiap email yang terdapat di situsweb target.")
     parser.add_argument("-Ch", "--cxH", action="store_true", help="Skrip Python ini alat untuk melakukan [Dictionary Attacks] pada nilai hash. Ini meminta nilai hash dan path ke wordlist dari pengguna. Kemudian, mencoba setiap password dalam wordlist, mengubahnya menjadi hash, dan membandingkannya dengan hash yang diberikan oleh pengguna. Jika ada kecocokan, program mencetak password yang cocok dan waktu saat ini. Jika tidak ada kecocokan, program mencetak pesan bahwa password tidak ditemukan.")
-    parser.add_argument("--install", action="store_true")
 
+    parser.add_argument("-T", "--TypeHash", help="Script Python ini untuk melakukan brute force pada hash MD5,SHA1,SHA224,SHA256,SHA384,SHA512. Program ini meminta input berupa nilai hash dari pengguna dan mencoba mencocokkan hash tersebut dengan password yang ada di dalam wordlist. Jika cocok, program akan mencetak password yang cocok. Jika tidak ada yang cocok, program akan mencetak pesan bahwa password tidak ditemukan.\n")
+
+    parser.add_argument("--install", action="store_true" , help="Untuk installasi semua requirements yang dibutuhkan.")
     # Parsing argumen
     args = parser.parse_args()
 
     if args.portScanner:
         Header()
         portScanner()
+
+    elif args.TypeHash == "md5":
+        md5_Crax()
     # Jika argumen -Wp632 atau --wpEmail diberikan, jalankan script zxWPS_632
     elif args.wpEmail:
         Header()
@@ -49,7 +57,7 @@ def zxArgs():
     # Jika argumen -Ch atau --cxH diberikan, jalankan script Cracking Hash
     elif args.exMail:
         Header()
-        
+        print("Masih Tahap Development")
     # Jika argumen --install atau -install diberikan, jalankan script zxInstallR
     elif args.install:
         zxInstallR()

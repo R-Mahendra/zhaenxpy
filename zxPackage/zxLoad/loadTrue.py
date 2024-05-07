@@ -1,7 +1,5 @@
 import time
 import sys
-import os
-
 
 def loadTrue():
     total_items = 100  # Total item yang akan diproses
