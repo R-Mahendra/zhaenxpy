@@ -84,7 +84,4 @@ def zxArgs():
             return
 
     # Jika tidak ada argumen yang diberikan, Tampilkan Banner
-    Header()
-
-
-
+Header()

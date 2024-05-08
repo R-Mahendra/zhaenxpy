@@ -13,7 +13,6 @@ def zxPrint(s):
 def main():
     try:
         zxArgs()
-
         # Memeriksa koneksi internet
         response = requests.get("http://www.google.com", timeout=5)
         response.raise_for_status()
@@ -35,7 +34,6 @@ def main():
     except KeyboardInterrupt:
         zxPrint("\n\n════════ The Program was terminated by user ════════\n")
         sys.exit()
-
 
 if __name__ == "__main__":
     main()
