@@ -9,6 +9,7 @@ from zxPackage.zxCrackHash import sha224_Crax
 from zxPackage.zxCrackHash import sha256_Crax
 from zxPackage.zxCrackHash import sha384_Crax
 from zxPackage.zxCrackHash import sha512_Crax
+from zxPackage.zxCrackHash import HashAnalyer
 import subprocess
 import argparse
 
@@ -46,6 +47,7 @@ zxArguments = {
     "wpEmail": zxWPS_632,
     "wpLogin": zxWPS_191,
     "exMail": zxEmail,
+    "hashAnalyzer": HashAnalyer,
     "install": zxInstallR
 }
 
@@ -61,6 +63,8 @@ def zxArgs():
     parser.add_argument("-Wp191", "--wpLogin", action="store_true", help="(WPS-Hide-Login) Bypass Perlindungan dengan Referer-Header. Plugin ini memiliki bug yang  memungkinkan untuk mendapatkan halaman login rahasia dengan mengatur string referensi acak dan membuat permintaan ke /wp-admin/options.php sebagai pengguna yang tidak diautentikasi.")
 
     parser.add_argument("-Em", "--exMail", action="store_true", help="Opsi ini hanya untuk memudahkan mencari tiap-tiap email yang terdapat di situsweb target.")
+
+    parser.add_argument("-Ha", "--hashAnalyzer", action="store_true", help="Script ini untuk memeriksa jenis hash dan menampilkan informasi hash dalam format tabel. Setelah pengguna memasukkan nilai hash, script akan menentukan jenis hashnya (misalnya MD5, SHA-1, dll.) dan menampilkan informasi terkait seperti panjang bit hash, panjang karakter, dan tipe karakter. Jika jenis hash tidak ditemukan, akan ditampilkan pesan bahwa tipe hash tidak ditemukan. Script ini berguna untuk mengidentifikasi dan memahami jenis hash yang digunakan dalam berbagai keperluan keamanan dan kriptografi.")
 
     parser.add_argument("-Ts", "--TypeHash", nargs="?", choices=["md5", "sha1", "sha224", "sha256", "sha384", "sha512"], help="Script Python ini untuk melakukan Dictionary Attacks pada hash MD5,SHA1,SHA224,SHA256,SHA384,SHA512. Program ini meminta input berupa nilai hash dari pengguna dan mencoba mencocokkan hash tersebut dengan password yang ada di dalam wordlist. Jika cocok, program akan mencetak password yang cocok. Jika tidak ada yang cocok, program akan mencetak pesan bahwa password tidak ditemukan.")
 

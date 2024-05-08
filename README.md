@@ -41,6 +41,12 @@ options:
 
   -Em, --exMail         Opsi ini hanya untuk memudahkan mencari tiap-tiap email yang terdapat di situsweb target.
 
+  -Ha, --hashAnalyzer   Script ini untuk memeriksa jenis hash dan menampilkan informasi hash dalam format tabel.
+                        Setelah pengguna memasukkan nilai hash, script akan menentukan jenis hashnya (misalnya MD5, SHA-1, dll.)
+                        dan menampilkan informasi terkait seperti panjang bit hash, panjang karakter, dan tipe karakter.
+                        Jika jenis hash tidak ditemukan, akan ditampilkan pesan bahwa tipe hash tidak ditemukan. Script ini berguna    
+                        untuk mengidentifikasi dan memahami jenis hash yang digunakan dalam berbagai keperluan keamanan dan kriptografi.
+
   -Ts, --TypeHash TYPE  Script Python ini untuk melakukan Dictionary Attacks pada hash MD5,SHA1,SHA224,SHA256,SHA384,SHA512.
                         Program ini meminta input berupa nilai hash dari pengguna dan mencoba mencocokkan hash tersebut dengan
                         password yang ada di dalam wordlist. Jika cocok, program akan mencetak password yang cocok.
