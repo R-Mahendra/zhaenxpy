@@ -17,8 +17,8 @@ def main():
         # Memeriksa koneksi internet
         response = requests.get("http://www.google.com", timeout=5)
         response.raise_for_status()
-        # zxPrint("\n════════ Happy Hacking ════════\n")
         return
+    
         # Jika koneksi internet terputus
     except requests.exceptions.ConnectionError:
         zxPrint("\n\n════════ The Internet is not connected. ════════\n")
@@ -29,7 +29,7 @@ def main():
         return False
         # Jika  ada kesalahan kodingan
     except TypeError:
-        zxPrint("\n\n════════ Type Error, Kesalahan Codingan ════════\n")
+        zxPrint("\n\n════════ Type Error, Kesalahan Coding ════════\n")
         sys.exit()
 
     except KeyboardInterrupt:
